@@ -28,5 +28,17 @@ namespace Bai16_Format_test
             formtest.MdiParent = this;
             formtest.Show();
         }
+
+        private void lblinfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void form1_Load(object sender, EventArgs e)
+        {
+            string ten = "Võ Minh Thiện";
+            lblinfo.Text = "Họ và tên: " + ten + Environment.NewLine;
+            lblinfo.Text += "Ngày viết chương trình: " + System.DateTime.Now;
+        }
     }
 }
