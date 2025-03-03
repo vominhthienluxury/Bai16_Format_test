@@ -40,5 +40,12 @@ namespace Bai16_Format_test
             lblinfo.Text = "Họ và tên: " + ten + Environment.NewLine;
             lblinfo.Text += "Ngày viết chương trình: " + System.DateTime.Now;
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox1 = new AboutBox1();
+            aboutBox1.MdiParent = this;
+            aboutBox1.Show();
+        }
     }
 }

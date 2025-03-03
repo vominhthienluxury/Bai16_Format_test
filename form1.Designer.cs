@@ -30,11 +30,12 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiệnÍchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hỗTrợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.formtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiệnÍchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formtestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hỗTrợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblinfo = new System.Windows.Forms.Label();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,13 @@
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // tiệnÍchToolStripMenuItem
             // 
             this.tiệnÍchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -66,25 +74,20 @@
             this.tiệnÍchToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.tiệnÍchToolStripMenuItem.Text = "Tiện ích";
             // 
-            // hỗTrợToolStripMenuItem
-            // 
-            this.hỗTrợToolStripMenuItem.Name = "hỗTrợToolStripMenuItem";
-            this.hỗTrợToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.hỗTrợToolStripMenuItem.Text = "Hỗ trợ";
-            // 
             // formtestToolStripMenuItem
             // 
             this.formtestToolStripMenuItem.Name = "formtestToolStripMenuItem";
-            this.formtestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.formtestToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
             this.formtestToolStripMenuItem.Text = "Formtest";
             this.formtestToolStripMenuItem.Click += new System.EventHandler(this.formtestToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // hỗTrợToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.hỗTrợToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.hỗTrợToolStripMenuItem.Name = "hỗTrợToolStripMenuItem";
+            this.hỗTrợToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.hỗTrợToolStripMenuItem.Text = "Hỗ trợ";
             // 
             // lblinfo
             // 
@@ -95,6 +98,13 @@
             this.lblinfo.Size = new System.Drawing.Size(0, 24);
             this.lblinfo.TabIndex = 2;
             this.lblinfo.Click += new System.EventHandler(this.lblinfo_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // form1
             // 
@@ -124,6 +134,7 @@
         private System.Windows.Forms.ToolStripMenuItem formtestToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hỗTrợToolStripMenuItem;
         private System.Windows.Forms.Label lblinfo;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 
